@@ -153,10 +153,10 @@ side1 = float(input("Enter the length of side 1: "))
 side2 = float(input("Enter the length of side 2: "))
 side3 = float(input("Enter the length of side 3: "))
 
-if side1 + side2 == side3 or side2 + side3 == side1 or side3 + side1 == side2:
-  print("Can be made triangle")
+if (side1 + side2 > side3) and (side2 + side3 > side1) and (side3 + side1 > side2):
+    print("Can be made into a triangle")
 else:
-  print("Cannot be made triangle")
+    print("Cannot be made into a triangle")
 
 """7. Write a Python program that performs arithmetic operations on two numbers."""
 
